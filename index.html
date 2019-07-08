@@ -8,42 +8,302 @@
       html, body {
         margin: 0;
         padding: 0;
-        font-family: Avenir, Arial;
-        background-color: white;
+        font-family: times;
+        background-image: url("images/back.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100vw 100vh;
         }
 
-        .nav {
-        width: 100vw;
-        background-color: #0f1454;
-        top: 0;
-        display:block;
-        position: fixed;
-        color: white;
+        .top {
+          background: black;;
+          height:10.5vw;
+          width: 100vw;
+          display: block;
+          position: relative;
         }
 
-        .menu {
-          list-style: none;
+        .logo {
           display: inline-block;
+          position:static;
+          width: 100%;
+          padding: 1vw 0;
         }
 
-        .menu li {
+        #logo {
+          height: 8vw;
+          background-color: black;
+          border: .25vw solid white;
+          margin: 0 10vw;
+        }
+
+        .menu{
           display: inline-block;
-          width: 22.5vw;
+          font-family: monospace;
+          font-size: 2vw;
+          color: white;
+          text-align: center;
+          margin: 0 4vw;
+          height: 5vw;
+          transform: translateY(-70%);
+      }
+
+      .right{
+        margin-left: 20vw;
+      }
+
+        .title{
+          color: black;
+          font-family: monospace;
+          width: 100%;
+          text-align: center;
+          font-size: 2vw;
+          position: static;
+        }
+
+        .content{
+          background-color: rgba(255, 255, 255, 0.8);
+          width: 70vw;
+          margin: 1.5vw auto;
+          padding: 1vw;
+          overflow-y: scroll;
+          height: 60vh;
+          color: black;
+        }
+
+        .menu a{
+          text-decoration: none;
+          color: white;
+        }
+
+        .content a{
+          text-decoration: none;
+          color: black;
+        }
+
+        .sociali{
+          height: 40px;
+          width: auto;
+          position: static;
+          display: inline-block;
+          margin: 0 10px;
+          transform: translateY(35%);
+        }
+
+        .socialit{
+          height: 30px;
+          width: auto;
+          position: static;
+          display: inline-block;
+          margin: 0 10px;
+          transform: translateY(35%);
+        }
+
+        .title a{
+          text-decoration: none;
+        }
+
+        .head{
+          font-weight: bold;
+          text-align: center;
+          font-size: 18px
+        }
+
+        .links{
+          width: auto;
           text-align: center;
         }
 
+        .img{
+          height: 18vw;
+          width: 18vw;
+          display: inline-block;
+          object-fit: cover;
+          text-align: center;
+        }
 
+        .ind{
+          display: inline-block;
+          padding: 1vw;
+          margin: 8px;
+          font-size: 10px;
+          font-weight: bold;
+          border: 1px black solid;
+          background-color: white;
+        }
+
+        .cap{
+          width: 16vw;
+        }
+
+        .short{
+          font-weight: normal;
+        }
+
+        .writing{
+          text-align: center;
+        }
 
     </style>
   </head>
   <body>
-    <div class="nav">
-      <ul class="menu">
-        <li>Home</li>
-        <li>Writing</li>
-        <li>Services</li>
-        <li>About Me</li>
-      </ul>
+
+    <div class="top">
+
+      <div class="logo">
+
+          <div class="menu">
+           <a href="#writing"><p>WRITING</p></a>
+          </div>
+
+          <div class="menu">
+            <a href="#services"><p>SERVICES</p></a>
+          </div>
+
+          <img id="logo" src="images/logob.png"/>
+
+          <div class="menu right">
+            <a href="#about"><p>ABOUT ME</p></a>
+          </div>
+
+      </div>
     </div>
+
+    <div class="content">
+      <div class="about">
+        <a name="about"></a>
+        <p class="head">ABOUT ME</p>
+        <p> My path to writing wasn’t a straight one. I had never actually written anything other than school essays until after my freshman year at the University of Florida, when a friend asked me to produce content for his Miami Dolphins Sports blog. I quickly found I enjoyed it, even if I was a Colts fan. Still, my focus at UF remained international relations and history… then I had brain surgery. </br></br>
+        I had a tumor – I named him Jim. Needless to say, the event changed my perspective.</br>
+        </br>
+        The next few years in college were hard. I hated the idea of a career in international relations and I was scared to change my major. Through it all, I kept writing.
+        I realized I could never be happy if I wasn’t a writer. So, I switched my major to journalism to improve my writing and storytelling skills just before my fourth year. However, because I entered the journalism school so late in my academic career, I had to learn how to research, interview and write stories in a trial by fire. To my surprise, it went well.</br>
+        </br>
+        In my fifth year, I became a reporter for WUFT News, where I quickly found my niche as the network’s city government and development reporter. In eight months, I covered topics like Hurricane Michael, the 2019 mayoral election and Gainesville’s affordable housing crisis. I also broke news on a massive midtown development plan, which helped launch state legislation and became WUFT’s most viewed article of all time. I also served as the newsroom’s Thursday copy editor, where I edited other students’ stories, ran social media and helped teach lower-level journalism students. </br></br>
+
+        Since graduating, I’ve become a travelling freelancer and aspiring novelist. I offer services related to writing, editing and content creation on an array of topics including business, sports, travel and more.
+
+        </p>
+      </div>
+
+      <br>
+
+      <div class="writing">
+
+        <a name="writing"></a>
+        <p class="head">WRITING</p>
+        <div class="links">
+
+          <div class="ind">
+            <a href="https://www.abta.org/testimonials/how-i-put-humpty-dumpty-back-together-again/" target="_blank">  <img class="img" src="images/art10.png" alt=""></a>
+          <p class="cap">
+            HOW I PUT HUMPTY DUMPTY BACK TOGETHER AGAIN <br>
+            <span class="short">My tumor's name was Jim...</span>
+
+          </p>
+          </div>
+
+          <div class="ind">
+            <a href="https://www.wuft.org/news/2019/05/08/gainesville-residents-struggle-to-pay-rent-amid-floridas-housing-crisis/" target="_blank">  <img class="img" src="images/art9.png" alt=""></a>
+          <p class="cap">
+            GAINESVILLE RESIDENTS STRUGGLE TO PAY RENT AMID FLORIDA'S HOUSING CRISIS
+          </p>
+          </div>
+
+          <div class="ind">
+            <a href="https://www.wuft.org/news/2019/04/17/midtown-makeover-development-plan-to-replace-swamp-post-office-with-apartments/" target="_blank">  <img class="img" src="images/art8.png" alt=""></a>
+          <p class="cap">
+            MIDTOWN MAKEOVER DEVELOPMENT PLAN TO REPLACE SWAMP POST OFFICE WITH APARTMENTS
+          </p>
+          </div>
+
+          <div class="ind">
+            <a href="https://www.wuft.org/news/2019/03/11/gainesville-mayoral-election-preview-lauren-poe-faces-three-challengers-for-re-election/" target="
+            ">  <img class="img" src="images/art7.png" alt=""></a>
+          <p class="cap">
+            GAINESVILLE MAYORAL ELECTION PREVIEW: LAUREN POE FACES THREE CHALLENGERS FOR RE-ELECTION
+          </p>
+          </div>
+
+          <div class="ind">
+            <a href="https://www.wuft.org/news/2018/11/30/packed-crowd-at-gainesville-city-hall-pushes-commission-to-delay-gnv-rise-decision/" target="_blank">  <img class="img" src="images/art6.png" alt=""></a>
+          <p class="cap">
+            PACKED CROWD AT GAINESVILLE CITY HALL PUSHES COMISSION TO DELAY GNV RISE DECISION
+          </p>
+          </div>
+
+          <div class="ind">
+            <a href="https://www.wuft.org/news/2018/10/15/barefooting-tradition-of-earleton-holds-strong/" target="_blank">  <img class="img" src="images/art5.png" alt=""></a>
+          <p class="cap">
+            BAREFOOTING TRADITION OF EARLETON HOLDS STRONG <br>
+            <span class="short">Jimmy Roundtree floats on Lake Santa Fe...</span>
+          </p>
+          </div>
+
+          <div class="ind">
+            <a href="https://www.wuft.org/news/2018/10/10/few-seek-shelter-in-dixie-county-as-michael-roars-ashore/" target="_blank"><img class="img" src="images/art4.png" alt=""></a>
+            <p class="cap">FEW SEEK SHELTER IN DIXIE COUNTA AS MICHAEL ROARS ASHORE <br>
+              <span class="short">Gray skies loomed...</span>
+            </p>
+          </div>
+
+          <div class="ind">
+            <a href="https://thedeependmiami.com/2016/06/20/make-it-wayne-how-reggie-waynes-presence-at-otas-affects-the-dolphins/" target="_blank"><img class="img" src="images/art3.png" alt=""></a>
+            <p class="cap"> MAKET I WAYNE: HOW REGGIE WAYNE'S PRESENCE AT OTAS AFFECTS THE DOLPHINS
+            </p>
+          </div>
+
+          <div class="ind">
+            <a href="https://thedeependmiami.com/2016/12/28/beating-belichick-what-can-the-dolphins-do-to-slow-down-the-patriots/" target="_blank"><img class="img" src="images/art2.png" alt=""></a>
+            <p class="cap">BEATING BELICHICK: WHAT CAN THE DOLPHINS DO TO SLOW DOWN THE PATRIOTS
+            </p>
+          </div>
+
+            <div class="ind">
+              <a href="https://thedeependmiami.com/2016/02/04/A" target="_blank" ><img class="img" src="images/art1.png" alt=""></a>
+              <p class="cap">THE GOLDEN GAME: 3 STORYLINES THAT NEED MORE ATTENTION AHEAD OF SUPERBOWL 50
+              </p>
+            </div>
+
+        </div>
+
+        <strong><p>Further Reading</p></strong>
+        <a href="https://thedeependmiami.com/author/jewishknight51/" target="_blank">Deep End Articles</a><br>
+        <a href="https://www.wuft.org/news/author/jacobberkowitz/" target="_blank">WUFT Articles</a><br>
+        <a href="https://intothecesspool.wordpress.com/2017/07/23/what-is-citizens-united-and-why-is-it-a-problem/" target="_blank">Citizens United Essay</a>
+      </div>
+
+      <br>    <br>
+
+
+
+      <div class="services">
+        <a name="services"></a>
+        <p class="head">SERVICES</p>
+
+        I offer services related to writing, editing and content creation on an array of topics including business, sports, travel and more.<br> Specific services listed below:<br><br>
+
+        <strong>Writing and Journalism:</strong><br><br>
+        Accuracy, brevity and clarity – the ABCs of writing and first tools I gathered in journalism school. As a reporter, I wielded those tools by taking complex topics and turning them into something the average reader could understand. The creative elements were a bonus.<br><br>
+        From writing comedic fantasy football articles to breaking news on land development, I’ve developed a “Swiss Army voice,” which works with various topics and brings readers back for more.<br><br>
+
+        <strong>Editing:</strong><br><br>
+        I am a thorough, yet efficient editor well-versed in AP Style (sorry if you’re an oxford comma fan). I ensure any copy I send is clear, concise and free of any glaring errors that could take away from someone’s otherwise excellent work.<br><br>
+        For content editing, I know what can be shortened, restated or clarified. I’m motivated to help you make your cover letter, article or short story the best it can be.<br><br>
+
+        <strong>Content Managing:</strong><br><br>
+        The media market is oversaturated, and it’s crucial to find a niche that sets you apart, knowing your market and gathering data is an important aspect of that. Understanding analytics past just the raw numbers has helped me find out what works and what doesn’t.<br><br>
+        Helping others find their voice – be they author, journalist or novice – is almost as fulfilling a job for me as writing my own stories.
+
+      </div>
+    </div>
+
+    <div class="title">
+      Jacob C. Berkowitz | writer, editor, storyteller |
+      <a href="https://twitter.com/JacobCBerkowitz" target="_blank"> <img class="sociali" src="images/twit1.png" alt=""> </a>
+      <a href="https://www.instagram.com/jacob.berkowitz51/" target="_blank"> <img class="sociali" src="images/insta1.png" alt=""> </a>
+      <a href="https://www.linkedin.com/in/jacob-berkowitz-01329b151/" target="_blank"> <img class="socialit" src="images/link1.png" alt=""> </a>
+    </div>
+
   </body>
 </html>
